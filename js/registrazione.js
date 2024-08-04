@@ -87,10 +87,12 @@ app.set('views', path.join(__dirname, '../html'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
+    const db = new Database();  // Move the declaration of 'db' inside the Express.js code block
     res.render('pagReg', { message: '', members: db.tutti() });
 });
 
 app.post('/', (req, res) => {
+    const db = new Database();  // Move the declaration of 'db' inside the Express.js code block
     const name = req.body.name;
     const email = req.body.email;
     const password = req.body.password;
