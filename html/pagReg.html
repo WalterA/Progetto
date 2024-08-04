@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PagRegistrazione</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Pagina Registrazione</title>
     <link rel="stylesheet" href="..\css\style.css">
 </head>
 <body>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="..\html\pagHome.html">Home</a></li>
+                <li><a href="..\html\pagReg.html">Registrati</a></li>
+                <li><a href="..\html\pagLogin.html">Login</a></li>
+            </ul>
+            <a href="#" class="menu-toggle">
+                
+            </a>
+        </nav>
     <div class="outer-container">
         <div class="container">
             <h1 class="animated-title">Registrazione</h1>
@@ -16,15 +29,7 @@
                 <input type="password" name="password" placeholder="Password" required><br>
                 <button type="submit" class="button">Registrati</button>
             </form>
-            {% if message %}
-                <p>{{ message }}</p>
-            {% endif %}
-            <h2>Membri Registrati</h2>
-            <ul>
-                {% for member in members %}
-                    <li>{{ member }}</li>  <!-- Visualizza solo il nome -->
-                {% endfor %}
-            </ul>
+            
         </div>
     </div>
     <script src="..\js\registrazione.js"></script>

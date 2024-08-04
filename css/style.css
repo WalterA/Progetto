@@ -2,11 +2,17 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     display: flex;
-    justify-content: center;
+    justify-content: center,space-between;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: auto;
 }
+
+
+.menu ul{padding: 0;margin: 0;}
+.menu li{display: inline-block}
+.menu a{padding:15px 20px;display: block; color: #005a9e;font-weight: bold;}
 
 .outer-container {
     display: flex;
@@ -54,3 +60,8 @@ body {
 .button:hover {
     background-color: #005a9e;
 }
+.header {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 30px 10%;}
+
